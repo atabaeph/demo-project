@@ -14,7 +14,7 @@ def buildDockerImg() {
 
 def deployApp() {
 	echo 'deploying app....'
-	sh 'docker -d -p 8989:8080 docker build -t abubandit/demo-app:1.2'
+	sh 'docker -d -p 8989:8080 abubandit/demo-app:1.2'
 }
 
 return this
